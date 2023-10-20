@@ -6,6 +6,6 @@ resource "aws_lb_listener" "example" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.alb-target-group.arn
+    target_group_arn = aws_lb_target_group.alb-target-group-lab3.arn
   }
 }
