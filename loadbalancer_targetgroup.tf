@@ -1,5 +1,5 @@
-resource "aws_lb_target_group" "alb-target-group-lab3" {
-  name     = "alb-target-group-lab3"
+resource "aws_lb_target_group" "alb-target-group" {
+  name     = "alb-target-group"
   port     = 80
   protocol = "HTTP"
   vpc_id   = aws_vpc.custom.id
