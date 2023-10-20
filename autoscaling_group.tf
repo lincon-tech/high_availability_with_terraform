@@ -7,7 +7,7 @@ resource "aws_autoscaling_group" "autoscaling" {
   launch_configuration      = aws_launch_configuration.launch_config.id
   vpc_zone_identifier       = aws_subnet.public[*].id
 
-  target_group_arns = [aws_lb_target_group.alb-target-group.arn]
+  target_group_arns = [aws_lb_target_group.alb-target-group-lab3.arn]
 
   tag {
     key                 = "Name"
